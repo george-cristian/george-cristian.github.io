@@ -1,0 +1,6 @@
+[book]
+authors = ["George Cristian"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Rust Introduction"
