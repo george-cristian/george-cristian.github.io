@@ -1,0 +1,63 @@
+# Many parts of this file are taken from https://gitlab.com/kaushalmodi/kaushalmodi.gitlab.io/
+baseURL = "https://george-cristian.github.io"
+Title = "Artem's notes on computer technologies and education"
+# docs/ is the only non-root folder that GitHub Pages accepts to serve
+publishdir = "docs"
+theme = "refined"
+
+[Author]
+name = "George Cristian"
+
+[Social]
+github = "george-cristian"
+
+[Params]
+tagline = "Rust Tech Talk Website"
+mainSections = ["posts"]
+feedSections = ["posts"]
+cache_busting = true
+# html5_validator = true
+# Go date formats: https://golang.org/pkg/time/#pkg-constants
+dateform = "Mon Jan 2, 2006"
+
+# Set favicons to true only if the following files are present in the project assets/ dir:
+# - safari-pinned-tab.svg
+# - manifest.json
+# - favicon-16x16.png
+# - favicon-32x32.png
+# - apple-touch-icon.png
+favicons = false
+
+themecolorbase = "brown"
+
+[Params.source]
+url = "https://github.com/george-cristian/george-cristian.github.io"
+org_dir = "src"
+md_dir = "src"
+ox_hugo = true
+
+[[Params.social]]
+name = "Github"
+link = "https://github.com/george-cristian/"
+relme = true
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[Taxonomies] # [indexes] is obsolete since v0.11
+category = "categories" # SINGULAR = "PLURAL"
+tag = "tags"
+series = "series"
+
+[outputs]
+home = ["HTML", "RSS", "ATOM", "JF2Feed"] # default = ["HTML", "RSS"]
+section = ["HTML", "RSS", "ATOM", "JF2Feed"] # posts/atom.xml
+
+# https://gohugo.io/getting-started/configuration/#configure-file-caches
+[caches]
+[caches.getjson]
+dir = ":cacheDir/:project"
+maxAge = "1m"
+[caches.getcsv]
+dir = ":cacheDir/:project"
+maxAge = "1m"
