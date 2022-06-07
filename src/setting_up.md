@@ -15,7 +15,7 @@ Rust also needs a C compiler. In case you do not have one, do the following:
 * For **Linux**
 ```shell
 sudo apt-get update
-sudo apt install build-essentials
+sudo apt install build-essential
 ```
 * For **macOS**
 ```shell
