@@ -1,6 +1,6 @@
 # Many parts of this file are taken from https://gitlab.com/kaushalmodi/kaushalmodi.gitlab.io/
 baseURL = "https://george-cristian.github.io"
-Title = "Artem's notes on computer technologies and education"
+Title = "Rust Tech Talk Website"
 # docs/ is the only non-root folder that GitHub Pages accepts to serve
 publishdir = "docs"
 theme = "refined"
