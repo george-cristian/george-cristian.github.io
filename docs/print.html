@@ -269,7 +269,16 @@ sudo apt install build-essential
 <li>IntelliJ IDEA</li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="demo---hello-rust"><a class="header" href="#demo---hello-rust">Demo - Hello Rust</a></h1>
-<p>A guessing game made with Rust, in which a random number is generated between 1 and 100, and the user has to input a guess. The program will signal if the guess is high or low, and the user can try again until it's perfect.</p>
+<p>The following is a guessing game made with Rust, in which a random number is generated between 1 and 100, and the user has to input a guess. The program will signal if the guess is high or low, and the user can try again until it's perfect.</p>
+<p>First, set up a new project, using Cargo:</p>
+<pre><code class="language-shell">cargo new guessing_game
+cd guessing_game
+</code></pre>
+<ul>
+<li>Inside the new folder, a <em>Cargo.toml</em> file is generated which basically configures your program (as explained in <a href="environment.html">Chapter 1</a>). Update it as you please.</li>
+<li>And also a <em>src</em> folder is generated with a file inside called <em>main.rs</em> which contains a &quot;Hello World!&quot; program (you can compile and run it, as explained in <a href="environment.html">Chapter 1</a>)</li>
+</ul>
+<p>Enter the following piece of code inside the <em>main.rs</em> file:</p>
 <pre><pre class="playground"><code class="language-rust">use std::io;
 use rand::Rng;
 use std::cmp::Ordering;
@@ -312,6 +321,7 @@ fn main() {
 <pre><code class="language-toml">[dependencies]
 rand = &quot;0.8.5&quot;
 </code></pre>
+<p>Compile and run the program as explained in <a href="environment.html">Chapter 1</a>. Have fun!</p>
 
                     </main>
 

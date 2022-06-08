@@ -1,7 +1,20 @@
 # Demo - Hello Rust
 
 
-A guessing game made with Rust, in which a random number is generated between 1 and 100, and the user has to input a guess. The program will signal if the guess is high or low, and the user can try again until it's perfect.
+The following is a guessing game made with Rust, in which a random number is generated between 1 and 100, and the user has to input a guess. The program will signal if the guess is high or low, and the user can try again until it's perfect.
+
+First, set up a new project, using Cargo:
+```shell
+cargo new guessing_game
+cd guessing_game
+```
+
+* Inside the new folder, a _Cargo.toml_ file is generated which basically configures your program (as explained in [Chapter 1](environment.html)). Update it as you please.
+* And also a _src_ folder is generated with a file inside called _main.rs_ which contains a "Hello World!" program (you can compile and run it, as explained in [Chapter 1](environment.html))
+
+
+Enter the following piece of code inside the _main.rs_ file:
+
 ```rust
 use std::io;
 use rand::Rng;
@@ -46,3 +59,5 @@ The code above, depends on the external library _"rand"_. In order to instruct t
 [dependencies]
 rand = "0.8.5"
 ```
+
+Compile and run the program as explained in [Chapter 1](environment.html). Have fun!
