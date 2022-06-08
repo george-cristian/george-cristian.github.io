@@ -163,7 +163,41 @@
 <li>Built-in infrastructure</li>
 <li>Interoperable with C</li>
 </ul>
-<h3 id="todo"><a class="header" href="#todo">TODO</a></h3>
+<h3 id="some-core-features"><a class="header" href="#some-core-features">Some core features</a></h3>
+<ul>
+<li>Low level language -&gt; Compiles to machine code</li>
+<li>Zero-cost abstraction</li>
+<li>Borrow checker</li>
+<li>Powerful enums</li>
+<li>Etc. </li>
+</ul>
+<h3 id="comparison-against-other-languages"><a class="header" href="#comparison-against-other-languages">Comparison against other languages</a></h3>
+<ul>
+<li>C++ 
+<ul>
+<li>No segfaults/buffer overflows/null pointers/data races/uninitialized data in Rust</li>
+<li>Rust has a built-in dependency management/build system (aka cargo)</li>
+<li>Friendly compiler errors in Rust</li>
+<li>Threads without data races in Rust</li>
+</ul>
+</li>
+<li>Java
+<ul>
+<li>No Garbage Collector in Rust and no runtime -&gt; Lower memory use and overhead</li>
+<li>No JVM (bytecode interpretation) and no JIT overhead in Rust -&gt; Rust uses LLVM (native code)</li>
+<li>Zero-cost abstraction</li>
+</ul>
+</li>
+<li>Python
+<ul>
+<li>Rust is much faster</li>
+<li>No Garbage Collector in Rust</li>
+<li>Multithreading without pain in Rust</li>
+<li>Static vs Dynamic typed</li>
+</ul>
+</li>
+</ul>
+<p>For more detailed info, check the official Rust documentation: <a href="https://doc.rust-lang.org/stable/book/foreword.html">https://doc.rust-lang.org/stable/book/foreword.html</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="the-rust-environment"><a class="header" href="#the-rust-environment">The Rust Environment</a></h1>
 <h3 id="the-development-ecosystem"><a class="header" href="#the-development-ecosystem">The development ecosystem</a></h3>
 <ul>
@@ -221,7 +255,7 @@ rand = &quot;0.8.5&quot;
 <li>For <strong>Linux</strong></li>
 </ul>
 <pre><code class="language-shell">sudo apt-get update
-sudo apt install build-essentials
+sudo apt install build-essential
 </code></pre>
 <ul>
 <li>For <strong>macOS</strong></li>
@@ -296,20 +330,6 @@ rand = &quot;0.8.5&quot;
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

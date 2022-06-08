@@ -155,7 +155,7 @@
 <li>For <strong>Linux</strong></li>
 </ul>
 <pre><code class="language-shell">sudo apt-get update
-sudo apt install build-essentials
+sudo apt install build-essential
 </code></pre>
 <ul>
 <li>For <strong>macOS</strong></li>
@@ -198,20 +198,6 @@ sudo apt install build-essentials
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
