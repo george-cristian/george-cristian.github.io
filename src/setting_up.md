@@ -2,9 +2,9 @@
 
 ## Installing Rust on Windows
 
-Go to the following link and follow the instructions for installation: <https://www.rust-lang.org/tools/install>
+Before installing Rust, it also requires the C++ build tools. In case you do not have those, you can get them via this link: <https://visualstudio.microsoft.com/visual-cpp-build-tools/>
 
-Rust also requires the C++ build tools. In case you do not have those, you can get them via this link: <https://visualstudio.microsoft.com/visual-cpp-build-tools/>
+To install Rust itself, go to the following link and follow the instructions for installation: <https://www.rust-lang.org/tools/install>
 
 ## Installing Rust on Linux or macOS
 The following command downloads and installs the latest stable version of Rust:
